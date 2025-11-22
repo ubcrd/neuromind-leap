@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import IndexV2 from "./pages/IndexV2";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import ComponentsShowcase from "./pages/ComponentsShowcase";
 import NotFound from "./pages/NotFound";
 import LoadingScreen from "./components/LoadingScreen";
 import PageTransition from "./components/PageTransition";
@@ -54,6 +55,11 @@ const AppRoutes = () => {
           <Route path="/contacto" element={
             <PageTransition>
               <Contact />
+            </PageTransition>
+          } />
+          <Route path="/components" element={
+            <PageTransition>
+              <ComponentsShowcase />
             </PageTransition>
           } />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
